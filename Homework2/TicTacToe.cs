@@ -9,7 +9,7 @@ public class TicTacToe : MonoBehaviour {
     public Texture2D Grid;
 
     private bool menu;
-    public int turn;//0 for O, 1 for X
+    private int turn;//0 for O, 1 for X
     private bool gameover;
     private bool draw;
     private int[,] grid = new int[3, 3];//0 for empty, 1 for O, 2 for X
