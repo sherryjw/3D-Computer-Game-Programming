@@ -14,7 +14,7 @@
 
 **太阳系项目配置如下：**
 - 创建九个 Sphere 分别命名为 Sun、Earth、Jupiter、Mars、Mercury、Neptune、Saturn、Uranus、Venus，其中 Sun 为父对象，其他均作为 Sun 的子对象
-- （可选）将 Resource1 目录下的图像和 Pro1 目录下 SolarSystem.cs 导入 Assets
+- 将 Resource1 目录下的图像和 Pro1 目录下 SolarSystem.cs 导入 Assets
 - 将 Resources1 目录下的图像一一拖放到对应的游戏对象并生成预制
 - 将 SolarSystem.cs 挂载到 MainCamera 上，并设置对应的公有变量，运行
 
