@@ -12,11 +12,15 @@
 - Resources1 目录下所有图像供实现太阳系中的天体预制使用
 - Resources2 目录下所有图像供《牧师与魔鬼》中的人物和场景预制使用
 
-太阳系项目配置如下：
+**太阳系项目配置如下：**
+- 创建九个 Sphere 分别命名为 Sun、Earth、Jupiter、Mars、Mercury、Neptune、Saturn、Uranus、Venus，其中 Sun 为父对象，其他均作为 Sun 的子对象
+- （可选）将 Resource1 目录下的图像和 Pro1 目录下 SolarSystem.cs 导入 Assets
+- 将 Resources1 目录下的图像一一拖放到对应的游戏对象并生成预制
+- 将 SolarSystem.cs 挂载到 MainCamera 上，并设置对应的公有变量，运行
 
-《牧师与魔鬼》项目配置如下：
+**《牧师与魔鬼》项目配置如下：**
 - 创建四个 Cube 分别命名为 River、Coast、Boat、Devil，创建一个 Cylinder 命名为 Priest
-- 将 Resources2 目录下的图像和 Pro2 目录下的脚本文件导入 Assets
+- 将 Resources2 目录下的图像和 Pro2 目录下的所有脚本文件导入 Assets
 - 将 Resources2 目录下的图像一一拖放到对应的游戏对象并生成预制（场景中原有的游戏对象要删去）
 - 创建一个空游戏对象，将 FirstController.cs 挂载到该空对象上，运行
 
