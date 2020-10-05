@@ -83,7 +83,7 @@ public class Sports3 : MonoBehaviour {
 
 - 写一个程序，实现一个完整的太阳系，其他星球围绕太阳的转速必须不一样，且不在一个法平面上。
 
-  - 在编写脚本前先创建所有天体对应的游戏对象，使八大行星成为太阳的子对象：
+  - 在编写脚本前先创建所有天体对应的游戏对象，使八大行星成为太阳的子对象：<br/>
   ![](https://cdn.jsdelivr.net/gh/sherryjw/StaticResource@master/image/3d-hw3-001.png)<br/>
 
   - 编写脚本 SolarSystem.cs，使用 [RotateAround](https://docs.unity3d.com/ScriptReference/Transform.RotateAround.html)；使用[Rotate](https://docs.unity3d.com/ScriptReference/Transform.Rotate.html)实现天体自转；参数参考真实宇宙大致给出：
@@ -150,10 +150,10 @@ public class SolarSystem : MonoBehaviour {
 }
 ```
 
-- - 将脚本拖放到 Main Camera，并设置相应的公有变量，运行：
+- - 将脚本拖放到 Main Camera，并设置相应的公有变量，运行：<br/>
   ![](https://cdn.jsdelivr.net/gh/sherryjw/StaticResource@master/image/3d-hw3-002.png)<br/>
 
-  - 为所有天体添加部件 Trail Renderer，可以在运行时显示天体运动轨迹：
+  - 为所有天体添加部件 Trail Renderer，可以在运行时显示天体运动轨迹：<br/>
   ![](https://cdn.jsdelivr.net/gh/sherryjw/StaticResource@master/image/3d-hw3-005.png)<br/>
   ![](https://cdn.jsdelivr.net/gh/sherryjw/StaticResource@master/image/3d-hw3-003.png)<br/>
   ![](https://cdn.jsdelivr.net/gh/sherryjw/StaticResource@master/image/3d-hw3-004.png)<br/><br/>
