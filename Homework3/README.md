@@ -15,5 +15,9 @@
 太阳系项目配置如下：
 
 《牧师与魔鬼》项目配置如下：
+- 创建四个 Cube 分别命名为 River、Coast、Boat、Devil，创建一个 Cylinder 命名为 Priest
+- 将 Resources2 目录下的图像和 Pro2 目录下的脚本文件导入 Assets
+- 将 Resources2 目录下的图像一一拖放到对应的游戏对象并生成预制（场景中原有的游戏对象要删去）
+- 创建一个空游戏对象，将 FirstController.cs 挂载到该空对象上，运行
 
 [🔗博客链接](https://www.yuque.com/pijiuwujializijun/acorbw/xh0mcw)
