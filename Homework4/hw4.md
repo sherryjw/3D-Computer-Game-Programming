@@ -5,18 +5,18 @@
 
 - 下载 Fantasy Skybox FREE，构建自己的游戏场景
 
-  - 从 [Asset Store](https://assetstore.unity.com/packages/2d/textures-materials/sky/fantasy-skybox-free-18353) 上下载 Fantasy Skybox FREE：
+  - 从 [Asset Store](https://assetstore.unity.com/packages/2d/textures-materials/sky/fantasy-skybox-free-18353) 上下载 Fantasy Skybox FREE：<br/>
   ![](https://cdn.jsdelivr.net/gh/sherryjw/StaticResource@master/image/3d-hw4-001.png)
-  - 导入包到 Assets 中：
+  - 导入包到 Assets 中：<br/>
   ![](https://cdn.jsdelivr.net/gh/sherryjw/StaticResource@master/image/3d-hw4-002.png)
-  - 在 Main Camera 上添加部件 Rendering -> Skybox，在已导入的 Fantasy Skybox FREE -> Materials 中选择喜欢的素材（.mat 文件）拖放到 Skybox 中：
+  - 在 Main Camera 上添加部件 Rendering -> Skybox，在已导入的 Fantasy Skybox FREE -> Materials 中选择喜欢的素材（.mat 文件）拖放到 Skybox 中：<br/>
   ![](https://cdn.jsdelivr.net/gh/sherryjw/StaticResource@master/image/3d-hw4-003.png)<br/>
   运行：<br/>
   ![](https://cdn.jsdelivr.net/gh/sherryjw/StaticResource@master/image/3d-hw4-004.png)
-  - 在菜单栏选择 GameObject -> 3D Object -> Terrain，新建一个地形对象，同时为了更完整的视觉效果，在其附近创建另外三个地形对象：
+  - 在菜单栏选择 GameObject -> 3D Object -> Terrain，新建一个地形对象，同时为了更完整的视觉效果，在其附近创建另外三个地形对象：<br/>
   ![](https://cdn.jsdelivr.net/gh/sherryjw/StaticResource@master/image/3d-hw4-005.png)<br/>
   ![](https://cdn.jsdelivr.net/gh/sherryjw/StaticResource@master/image/3d-hw4-006.png)
-  - 在 Terrain 的 Inspector 窗口中选择合适的工具渲染起伏的地形、花草等，从 Asset Store 中导入水面预制，游戏场景最终效果如下：
+  - 在 Terrain 的 Inspector 窗口中选择合适的工具渲染起伏的地形、花草等，从 Asset Store 中导入水面预制，游戏场景最终效果如下：<br/>
   ![](https://cdn.jsdelivr.net/gh/sherryjw/StaticResource@master/image/3d-hw4-007.png)
 
 
