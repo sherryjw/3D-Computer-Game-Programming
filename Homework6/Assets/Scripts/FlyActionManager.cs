@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,6 +9,7 @@ public class FlyActionManager : SSActionManager, IActionManager, ISSActionCallba
 
     protected void Start() {
         sceneController = (FirstController)SSDirector.GetInstance().CurrentSceneController;
+        sceneController.actionManager = this;
     }
 
     public void DiskFly(GameObject disk, float angle, float power) {
