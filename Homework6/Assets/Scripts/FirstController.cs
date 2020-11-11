@@ -1,9 +1,9 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class FirstController : MonoBehaviour, ISceneController, IUserAction {
-    public FlyActionManager actionManager;
+    public IActionManager actionManager;
     public DiskFactory diskFactory;
     public ScoreRecorder scoreRecorder;
     
@@ -19,6 +19,8 @@ public class FirstController : MonoBehaviour, ISceneController, IUserAction {
         diskFactory = Singleton<DiskFactory>.Instance;
         scoreRecorder = Singleton<ScoreRecorder>.Instance;
         gameObject.AddComponent<FlyActionManager>();
+        gameObject.AddComponent<DiskFlyPhysicsActionManager>();
+        actionManager = Singleton<FlyActionManager>.Instance;
         gameObject.AddComponent<UserGUI>();
     }
 
@@ -171,5 +173,11 @@ public class FirstController : MonoBehaviour, ISceneController, IUserAction {
     public void SwitchMode()
     {
         isPhysicsMode = !isPhysicsMode;
+        actionManager = isPhysicsMode ? Singleton<DiskFlyPhysicsActionManager>.Instance : Singleton<FlyActionManager>.Instance as IActionManager;
+    }
+
+    public void FreeDisk(GameObject disk)
+    {
+        diskFactory.FreeDisk(disk);
     }
 }
