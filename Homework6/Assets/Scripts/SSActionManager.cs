@@ -1,8 +1,9 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SSActionManager : MonoBehaviour, ISSActionCallback {
+public class SSActionManager : MonoBehaviour 
+{
     private Dictionary<int, SSAction> actions = new Dictionary<int, SSAction>();
     private List<SSAction> waitingAdd = new List<SSAction>();
     private List<int> waitingDelete = new List<int>();
@@ -37,10 +38,5 @@ public class SSActionManager : MonoBehaviour, ISSActionCallback {
         action.callback = manager;
         waitingAdd.Add(action);
         action.Start();
-    }
-
-    public void SSActionEvent(
-        SSAction source, SSActionEventType events = SSActionEventType.Competeted,
-        int intParam = 0, string strParam = null, Object objectParam = null) {
     }
 }
