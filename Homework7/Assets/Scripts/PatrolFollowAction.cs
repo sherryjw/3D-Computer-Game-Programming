@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class PatrolFollowAction : SSAction
 {
-    private float speed = 2f;            //跟随玩家的速度
-    private GameObject player;           //玩家
-    private PatrolData data;             //侦查兵数据
+    private float speed = 2f;
+    private GameObject player;
+    private PatrolData data;
 
     private PatrolFollowAction() { }
     public static PatrolFollowAction GetSSAction(GameObject player)
@@ -30,7 +30,6 @@ public class PatrolFollowAction : SSAction
         transform.position = Vector3.MoveTowards(this.transform.position, player.transform.position, speed * Time.deltaTime);
         this.transform.LookAt(player.transform.position);
 
-        //如果侦察兵没有跟随对象，或者需要跟随的玩家不在侦查兵的区域内
         if (!data.follow_player || data.wall_sign != data.sign)
         {
             this.destroy = true;

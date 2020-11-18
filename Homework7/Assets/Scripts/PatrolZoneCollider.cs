@@ -8,7 +8,6 @@ public class PatrolZoneCollider : MonoBehaviour
     {
         if (collider.gameObject.tag == "Player")
         {
-            //玩家进入巡逻兵的巡逻范围
             this.gameObject.transform.parent.GetComponent<PatrolData>().follow_player = true;
             this.gameObject.transform.parent.GetComponent<PatrolData>().player = collider.gameObject;
         }
@@ -18,7 +17,6 @@ public class PatrolZoneCollider : MonoBehaviour
     {
         if (collider.gameObject.tag == "Player")
         {
-            //玩家离开巡逻兵的巡逻范围
             this.gameObject.transform.parent.GetComponent<PatrolData>().follow_player = false;
             this.gameObject.transform.parent.GetComponent<PatrolData>().player = null;
         }

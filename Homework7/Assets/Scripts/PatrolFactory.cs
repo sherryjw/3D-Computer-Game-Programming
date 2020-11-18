@@ -4,19 +4,16 @@ using UnityEngine;
 
 public class PatrolFactory : MonoBehaviour
 {
-    private GameObject patrol = null;                              //巡逻兵
-    private List<GameObject> used = new List<GameObject>();        //正在被使用的巡逻兵
-    private GameObject crystal = null;                             //水晶
-    private List<GameObject> usedcrystal = new List<GameObject>();      //正在被使用的水晶
-    private float range = 12;                                      //水晶生成的坐标范围
-    private Vector3[] vec = new Vector3[9];                        //保存每个巡逻兵的初始位置
+    private GameObject patrol = null;
+    private List<GameObject> used = new List<GameObject>();
+    private Vector3[] vec = new Vector3[9];
 
     public List<GameObject> GetPatrols()
     {
         int[] pos_x = { -6, 4, 13 };
         int[] pos_z = { -4, 6, -13 };
         int index = 0;
-        //生成不同的巡逻兵初始位置
+
         for (int i = 0; i < 3; i++)
         {
             for (int j = 0; j < 3; j++)
@@ -35,21 +32,9 @@ public class PatrolFactory : MonoBehaviour
         }
         return used;
     }
-    public List<GameObject> GetCrystal()
-    {
-        for (int i = 0; i < 12; i++)
-        {
-            crystal = Instantiate(Resources.Load<GameObject>("Prefabs/Crystal"));
-            float ranx = Random.Range(-range, range);
-            float ranz = Random.Range(-range, range);
-            crystal.transform.position = new Vector3(ranx, 0, ranz);
-            usedcrystal.Add(crystal);
-        }
-        return usedcrystal;
-    }
+
     public void StopPatrol()
     {
-        //巡逻兵停止走动
         for (int i = 0; i < used.Count; i++)
         {
             used[i].gameObject.GetComponent<Animator>().SetBool("run", false);
